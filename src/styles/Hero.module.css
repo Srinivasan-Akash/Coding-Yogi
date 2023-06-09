@@ -1,0 +1,39 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5%;
+    color: var(--text-color);
+}
+
+.title {
+    font-size: 80px;
+    width: 50%;
+    text-align: center;
+    line-height: 1;
+}
+
+.desc {
+    font-size: 30px;
+    width: 75%;
+    text-align: center;
+}
+
+.visual{
+    width: 80%;
+    height: 40%;
+    margin-top: 2em;
+}
+
+.yellow {
+    color: var(--yellow);
+}
+
+.pink {
+    color: var(--pink);
+}
+
+.title, .desc {
+    font-family: "Zilla Slab";
+}

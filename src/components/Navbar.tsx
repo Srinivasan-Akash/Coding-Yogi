@@ -25,7 +25,7 @@ export default function Navbar() {
   return (
     <nav className={styles.navbar}>
       <div className="logo">
-        <h1>Coding Yogo</h1>
+        <h1>Coding Yogi</h1>
       </div>
 
       <div ref={menu} className={styles["nav-items"]}>
