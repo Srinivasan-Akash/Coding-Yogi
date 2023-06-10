@@ -35,7 +35,7 @@ export default function Navbar() {
           <li><Link href="/courses">Courses</Link></li>
           <li><Link href="#">Resources</Link></li>
           <li><Link href="#">Community</Link></li>
-          <li><Link href="#">Hackathons</Link></li>
+          <li><Link href="#">Challenges</Link></li>
           <li onClick={handleMenu} className={styles["close"]}></li>
         </ul>
       </div>

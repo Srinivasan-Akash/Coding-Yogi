@@ -1,4 +1,3 @@
-
 .navbar {
     display: flex;
     align-items: center;
@@ -19,6 +18,10 @@
     text-decoration: none;
     font-size: 1.2em;
     color: var(--text-color);
+}
+
+.nav-items a:hover {
+    color: var(--grey);
 }
 
 .signIn {

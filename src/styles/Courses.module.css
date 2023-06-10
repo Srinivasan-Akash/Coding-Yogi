@@ -1,5 +1,5 @@
 .main {
-    height: 100vh;
+    height: fit-content;
     overflow: hidden;
 }
 
@@ -26,4 +26,8 @@
     width: 80%;
     text-align: center;
     line-height: 1;
+}
+
+.grid {
+    margin: 1em 1em 1em 5%;
 }

@@ -4,6 +4,7 @@ import Navbar from '@/components/Navbar';
 import Head from 'next/head';
 import Course from '@/components/Course';
 import CourseFilter from '@/components/CourseFilter';
+import Card from '@/components/Card';
 
 export default function courses() {
   return (
@@ -18,6 +19,17 @@ export default function courses() {
         <Navbar></Navbar>
         <Course></Course>
         <CourseFilter></CourseFilter>
+        <section className={styles.grid}>
+          <Card 
+            instructor_name={"Akash S"}
+            instructor_photo='https://media.istockphoto.com/id/1288538088/photo/portrait-young-confident-smart-asian-businessman-look-at-camera-and-smile.webp?b=1&s=170667a&w=0&k=20&c=EcjlfC0hE33usx5Ys_ftE1iC0TlgKG1pSqclpOULGLk='
+            difficult_level="Begginner"
+            lessons={5}
+            thumbnail="/thumbnail.png"
+            course_name='Learn Type Script'
+            desc='Ready to start your journey into the TypeScript programming language? TypeScript builds on your JavaScript foundation so you can develop higher-quality, less error-prone code faster.....'>
+          </Card>
+        </section>
       </main>
     </>
   )
