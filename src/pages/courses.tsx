@@ -3,6 +3,7 @@ import styles from '@/styles/Courses.module.css';
 import Navbar from '@/components/Navbar';
 import Head from 'next/head';
 import Course from '@/components/Course';
+import CourseFilter from '@/components/CourseFilter';
 
 export default function courses() {
   return (
@@ -16,6 +17,7 @@ export default function courses() {
       <main className={styles["main"]}>
         <Navbar></Navbar>
         <Course></Course>
+        <CourseFilter></CourseFilter>
       </main>
     </>
   )

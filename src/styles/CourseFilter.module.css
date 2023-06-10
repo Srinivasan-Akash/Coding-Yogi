@@ -1,0 +1,56 @@
+.form {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    width: 90%;
+    margin: auto;
+    margin-top: 2%;
+}
+
+.searchContainer {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    position: relative;
+}
+
+.form select {
+    border: 2px solid var(--border);
+    background: #2A3032;
+    padding: 1em 1em;
+    border-radius: 10px;
+    color: var(--text-color);
+    width: 20%;
+}
+
+.searchContainer input {
+    width: 100%;
+    border: 2px solid var(--border);
+    background: #2A3032;
+    padding: 1em 3em;
+    outline: none;
+    color: var(--text-color);
+    border-radius: 10px;
+}
+
+.searchContainer input::placeholder {
+    color: var(--grey);
+}
+
+.searchContainer .search {
+    position: absolute;
+    left: 1%;
+    cursor: pointer;
+}
+
+.searchContainer .slash {
+    position: absolute;
+    right: 1%;
+    color: var(--text-color);
+    font-size: 1.2em;
+    font-weight: 900;
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    background: #071016;
+    padding: .1em .5em;
+}
