@@ -6,6 +6,7 @@
   --green: #22C55E;
   --yellow: #EF9D0C;
   --pink: #CA4186;
+  --grey: #7f82829c;
 }
 
 * {
@@ -17,5 +18,5 @@
 
 body {
   background: var(--bg);
-  height: 100vh;
+  height: fit-content;
 }

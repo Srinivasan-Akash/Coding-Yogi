@@ -1,9 +1,10 @@
-import Head from 'next/head'
-import Navbar from '@/components/Navbar'
-import Hero from '@/components/Hero'
-import styles from '@/styles/Hero.module.css';
+import React from 'react'
+import styles from '@/styles/Courses.module.css';
+import Navbar from '@/components/Navbar';
+import Head from 'next/head';
+import Course from '@/components/Course';
 
-export default function Home() {
+export default function courses() {
   return (
     <>
       <Head>
@@ -14,7 +15,7 @@ export default function Home() {
       </Head>
       <main className={styles["main"]}>
         <Navbar></Navbar>
-        <Hero></Hero>
+        <Course></Course>
       </main>
     </>
   )

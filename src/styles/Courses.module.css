@@ -1,0 +1,29 @@
+.main {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: fit-content;
+    margin-top: 5%;
+    font-family: "Zilla Slab";
+    color: var(--text-color);
+}
+
+.desc {
+    font-size: 30px;
+    width: 50%;
+    text-align: center;
+    color: var(--grey);
+}
+
+.title {
+    font-size: 80px;
+    width: 80%;
+    text-align: center;
+    line-height: 1;
+}

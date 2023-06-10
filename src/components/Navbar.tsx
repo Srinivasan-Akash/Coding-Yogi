@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import styles from '@/styles/Navbar.module.css';
+import Link from 'next/link';
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -30,11 +31,11 @@ export default function Navbar() {
 
       <div ref={menu} className={styles["nav-items"]}>
         <ul>
-          <li><a href="#">My Home</a></li>
-          <li><a href="#">Courses</a></li>
-          <li><a href="#">Resources</a></li>
-          <li><a href="#">Community</a></li>
-          <li><a href="#">Hackathons</a></li>
+          <li><Link href="/">My Home</Link></li>
+          <li><Link href="/courses">Courses</Link></li>
+          <li><Link href="#">Resources</Link></li>
+          <li><Link href="#">Community</Link></li>
+          <li><Link href="#">Hackathons</Link></li>
           <li onClick={handleMenu} className={styles["close"]}></li>
         </ul>
       </div>
