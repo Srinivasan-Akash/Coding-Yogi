@@ -30,4 +30,8 @@
 
 .grid {
     margin: 1em 1em 1em 5%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1em;
 }

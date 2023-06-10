@@ -2,17 +2,17 @@ import React from 'react'
 import styles from '@/styles/Card.module.css';
 import Image from 'next/image';
 
-interface cardDetails {
-    course_name: string;
-    thumbnail: string;
+interface CardDetails {
+    children: React.ReactNode;
     instructor_name: string;
     instructor_photo: string;
     difficult_level: string;
     lessons: number;
+    thumbnail: string;
+    course_name: string;
     desc: string;
 }
-
-export default function Card(props: cardDetails) {
+export default function Card(props: CardDetails) {
     const { course_name, thumbnail, instructor_name, instructor_photo, difficult_level, lessons, desc } = props
 
     return (
@@ -21,7 +21,7 @@ export default function Card(props: cardDetails) {
                 <Image className={styles.thumbnail} src={thumbnail} width={"280"} height={"280"} alt={"Thumbnail"} />
                 <div className={styles.instructor}>
                     <img src={instructor_photo} alt="" />
-                    <p> { instructor_name } </p>
+                    <p> {instructor_name} </p>
                 </div>
                 <h2>{course_name}</h2>
             </div>
