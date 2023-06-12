@@ -57,6 +57,22 @@
     transform: translate(-5%, -20%);
 }
 
+.modal {
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80vh;
+    width: 40vw;
+    z-index: 2;
+    border: none;
+    border-radius: 15px;
+}
+
+.modal::backdrop {
+    background: #1f2733c0;
+}
+
 @media screen and (max-width: 962px) {
     .close::after {
         content: "\2716";

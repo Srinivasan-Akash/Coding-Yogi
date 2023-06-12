@@ -1,11 +1,6 @@
 import React from 'react'
 import styles from '@/styles/Courses.module.css';
-
-interface HeadLine {
-    children: React.ReactNode;
-    page_name: string;
-    desc: string;
-}
+import HeadLine from '@/interfaces/HeadLine';
 
 export default function HeadLine(props: HeadLine) {
     return (

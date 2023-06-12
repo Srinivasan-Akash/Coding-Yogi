@@ -1,17 +1,8 @@
 import React from 'react'
 import styles from '@/styles/Card.module.css';
 import Image from 'next/image';
+import CardDetails from '@/interfaces/CardDetails';
 
-interface CardDetails {
-    children: React.ReactNode;
-    instructor_name: string;
-    instructor_photo: string;
-    difficult_level: string;
-    lessons: number;
-    thumbnail: string;
-    course_name: string;
-    desc: string;
-}
 export default function Card(props: CardDetails) {
     const { course_name, thumbnail, instructor_name, instructor_photo, difficult_level, lessons, desc } = props
 
