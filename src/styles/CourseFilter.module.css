@@ -54,3 +54,24 @@
     background: #071016;
     padding: .1em .5em;
 }
+
+@media screen and (max-width: 900px) {
+    .form {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .searchContainer {
+        width: 100%;
+    }
+
+    .form select {
+        width: 49%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .form select {
+        width: 100%;
+    }
+}

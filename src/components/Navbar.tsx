@@ -10,18 +10,15 @@ export default function Navbar() {
     if(!menuOpen) {
         setMenuOpen(true);
         if (menu.current) {
-          menu.current.style.right = '0%';
+          menu.current.style.left = '0%';
         }
     } else {
         setMenuOpen(false);
         if (menu.current) {
-          menu.current.style.right = '-100%';
+          menu.current.style.left = '-100%';
         }
     }
   }
-
-  useEffect(() => {
-  }, [menuOpen]);
 
   return (
     <nav className={styles.navbar}>
