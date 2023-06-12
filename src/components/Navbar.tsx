@@ -9,40 +9,6 @@ export default function Navbar() {
   const menu = useRef<HTMLDivElement>(null);
   const signInPopupElement = useRef<HTMLDialogElement>(null);
 
-  function handleMenu() {
-    if (!menuOpen) {
-      setMenuOpen(true);
-      if (menu.current) {
-        menu.current.style.left = '0%';
-      }
-    } else {
-      setMenuOpen(false);
-      if (menu.current) {
-        menu.current.style.left = '-100%';
-      }
-    }
-  }
-
-  function exitModal(e: any) {
-    if (signInPopupElement.current) {
-      const dialogDimensions = signInPopupElement.current.getBoundingClientRect()
-      if (
-        e.clientX < dialogDimensions.left ||
-        e.clientX > dialogDimensions.right ||
-        e.clientY < dialogDimensions.top ||
-        e.clientY > dialogDimensions.bottom
-      ) {
-        signInPopupElement.current.close()
-      }
-    }
-  }
-
-  function handleSignInPopup() {
-    if (signInPopupElement.current) {
-      signInPopupElement.current.showModal()
-    }
-  }
-
   return (
     <nav className={styles.navbar}>
       <div className="logo">
@@ -78,4 +44,38 @@ export default function Navbar() {
       </dialog>
     </nav>
   );
+
+  function handleMenu() {
+    if (!menuOpen) {
+      setMenuOpen(true);
+      if (menu.current) {
+        menu.current.style.left = '0%';
+      }
+    } else {
+      setMenuOpen(false);
+      if (menu.current) {
+        menu.current.style.left = '-100%';
+      }
+    }
+  }
+
+  function handleSignInPopup() {
+    if (signInPopupElement.current) {
+      signInPopupElement.current.showModal()
+    }
+  }
+  
+  function exitModal(e: any) {
+    if (signInPopupElement.current) {
+      const dialogDimensions = signInPopupElement.current.getBoundingClientRect()
+      if (
+        e.clientX < dialogDimensions.left ||
+        e.clientX > dialogDimensions.right ||
+        e.clientY < dialogDimensions.top ||
+        e.clientY > dialogDimensions.bottom
+      ) {
+        signInPopupElement.current.close()
+      }
+    }
+  }
 }
