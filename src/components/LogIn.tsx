@@ -10,21 +10,21 @@ export default function LogIn() {
             <div className={styles.btns}>
                 <button className={styles.google}>
                     <span>
-                        <Image className={styles.logo} src={"/google.png"} width={"20"} height={"20"} alt='Google Logo'></Image>
+                        <Image className={styles.logo} src={"/UI ICONS/SOCIAL MEDIA ICONS/google.png"} width={"20"} height={"20"} alt='Google Logo'></Image>
                     </span>
                     Get Started With Google
                 </button>
 
                 <button className={styles.github}>
                     <span>
-                        <Image className={styles.logo} src={"/github.png"} width={"20"} height={"20"} alt='Google Logo'></Image>
+                        <Image className={styles.logo} src={"/UI ICONS/SOCIAL MEDIA ICONS/github.png"} width={"20"} height={"20"} alt='Google Logo'></Image>
                     </span>
                     Get Started With GitHub
                 </button>
 
                 <button className={styles.linkedin}>
                     <span>
-                        <Image className={styles.logo} src={"/linkedin.png"} width={"20"} height={"20"} alt='Google Logo'></Image>
+                        <Image className={styles.logo} src={"/UI ICONS/SOCIAL MEDIA ICONS/linkedin.png"} width={"20"} height={"20"} alt='Google Logo'></Image>
                     </span>
                     Get Started With LinkedIn
                 </button>

@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '@/styles/Card.module.css';
+import styles from '@/styles/components/Card.module.css';
 import Image from 'next/image';
 import CardDetails from '@/interfaces/CardDetails';
 
@@ -18,17 +18,17 @@ export default function Card(props: CardDetails) {
             </div>
             <div className={styles.data}>
                 <div className={styles.dataItem}>
-                    <img src="/brain.svg" alt="" />
+                    <img src="/UI ICONS/GENERAL ICONS/brain.svg" alt="" />
                     <p><b>{difficult_level}</b> Friendly</p>
                 </div>
 
                 <div className={styles.dataItem}>
-                    <img src="/certificate.png" alt="" />
+                    <img src="/UI ICONS/GENERAL ICONS/certificate.png" alt="" />
                     <p>With <b>Cerificate</b></p>
                 </div>
 
                 <div className={styles.dataItem}>
-                    <img src="/book.png" alt="" />
+                    <img src="/UI ICONS/GENERAL ICONS/book.png" alt="" />
                     <p>With <b>{lessons} Lessons</b></p>
                 </div>
             </div>

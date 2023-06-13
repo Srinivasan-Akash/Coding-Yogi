@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '@/styles/Courses.module.css';
+import styles from '@/styles/pages/Courses.module.css';
 import HeadLine from '@/interfaces/HeadLine';
 
 export default function HeadLine(props: HeadLine) {

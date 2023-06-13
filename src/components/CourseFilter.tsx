@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '@/styles/CourseFilter.module.css';
+import styles from '@/styles/components/CourseFilter.module.css';
 import Image from 'next/image';
 
 export default function CourseFilter() {
@@ -7,7 +7,7 @@ export default function CourseFilter() {
         <div>
             <form className={styles.form}>
                 <div className={styles.searchContainer}>
-                    <Image className={styles.search} src={"/Search.png"} width={"30"} height={"30"} alt='Search'/>
+                    <Image className={styles.search} src={"/UI ICONS/GENERAL ICONS/Search.png"} width={"30"} height={"30"} alt='Search'/>
                     <input type="text" placeholder='Search Your Course' />
                     <span className={styles.slash}>/</span>
                 </div>
