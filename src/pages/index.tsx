@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
-import styles from '@/styles/Hero.module.css';
+import styles from '@/styles/components/Hero.module.css';
 
 export default function Home() {
   return (

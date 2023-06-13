@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '@/styles/Courses.module.css';
+import styles from '@/styles/pages/Courses.module.css';
 import Navbar from '@/components/Navbar';
 import Head from 'next/head';
 import HeadLine from '@/components/HeadLine';

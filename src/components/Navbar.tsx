@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import styles from '@/styles/Navbar.module.css';
+import styles from '@/styles/components/Navbar.module.css';
 import Link from 'next/link';
 import LogIn from './LogIn';
 
