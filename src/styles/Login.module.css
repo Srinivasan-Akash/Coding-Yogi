@@ -35,6 +35,12 @@
     border-radius: 5px;
     color: #fff;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 1em;
+    font-weight: 700;
 }
 
 .github {
@@ -48,4 +54,17 @@
 .google {
     background: #b4b2b2;
     color: #000 !important;
+}
+
+.btns button span{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 1%;
+    border-radius: 5px;
 }

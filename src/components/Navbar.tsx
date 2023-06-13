@@ -61,10 +61,12 @@ export default function Navbar() {
 
   function handleSignInPopup() {
     if (signInPopupElement.current) {
+      signInPopupElement.current.style.width = '40vw';
+      signInPopupElement.current.style.height = '80vh';
       signInPopupElement.current.showModal()
     }
   }
-  
+
   function exitModal(e: any) {
     if (signInPopupElement.current) {
       const dialogDimensions = signInPopupElement.current.getBoundingClientRect()
@@ -74,7 +76,15 @@ export default function Navbar() {
         e.clientY < dialogDimensions.top ||
         e.clientY > dialogDimensions.bottom
       ) {
-        signInPopupElement.current.close()
+        signInPopupElement.current.style.width = '0';
+        signInPopupElement.current.style.height = '0';
+    
+        // Wait for the animation to complete before closing the popup
+        setTimeout(() => {
+          if(signInPopupElement.current) {
+            signInPopupElement.current.close();
+          }
+        }, 300);
       }
     }
   }
