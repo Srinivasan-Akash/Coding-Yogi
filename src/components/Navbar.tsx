@@ -79,7 +79,6 @@ export default function Navbar() {
         signInPopupElement.current.style.width = '0';
         signInPopupElement.current.style.height = '0';
     
-        // Wait for the animation to complete before closing the popup
         setTimeout(() => {
           if(signInPopupElement.current) {
             signInPopupElement.current.close();
