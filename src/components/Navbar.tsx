@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import styles from '@/styles/components/Navbar.module.css';
 import Link from 'next/link';
 import LogIn from './LogIn';
+import Image from 'next/image';
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,8 +12,9 @@ export default function Navbar() {
 
   return (
     <nav className={styles.navbar}>
-      <div className="logo">
-        <h1>Coding Yogi</h1>
+      {/* NAV BAR ITEMS */}
+      <div className={styles.logo}>
+        <h1><Link href={"/"}>Coding Yogi</Link></h1>
       </div>
 
       <div ref={menu} className={styles["nav-items"]}>
@@ -39,9 +41,14 @@ export default function Navbar() {
         </div>
       </div>
 
+      {/* POPUP */}
       <dialog onClick={exitModal} className={styles.modal} ref={signInPopupElement}>
         <LogIn></LogIn>
       </dialog>
+
+      {/* BLOBS */}
+      <Image className={styles.blob1} src={"/WAVES/blob1.png"} width={"150"} height={"120"} alt='blob'/>
+      <Image className={styles.blob2} src={"/WAVES/blob2.png"} width={"169"} height={"129"} alt='blob'/>
     </nav>
   );
 

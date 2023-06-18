@@ -15,7 +15,8 @@
 }
 
 .nav-items ul li a,
-.nav-items ul li a {
+.nav-items ul li a,
+.logo h1 a {
     text-decoration: none;
     font-size: 1.2em;
     color: var(--text-color);
@@ -92,6 +93,21 @@
     }
 }
 
+.blob1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 12%;
+}
+
+.blob2 {    
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
 .modal::backdrop {
     background: #1f2733c0;
 }
@@ -103,6 +119,11 @@
         position: absolute;
         top: 2.5%;
         right: 10%;
+    }
+
+    .blob1 {
+        width: 20%;
+        height: 20%;
     }
 
     .extra {

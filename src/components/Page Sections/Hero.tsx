@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '@/styles/components/Hero.module.css';
+import styles from '@/styles/pages/Hero.module.css';
 import Image from 'next/image';
 
 export default function Hero() {

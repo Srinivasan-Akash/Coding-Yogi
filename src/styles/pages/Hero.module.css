@@ -31,6 +31,7 @@
     height: 40%;
     margin-top: 2em;
     padding-bottom: 2em;
+    z-index: 2;
 }
 
 .yellow {
@@ -86,4 +87,54 @@
     .desc {
         font-size: 10px;
     }
+}
+
+/* FEATURES SECTION */
+.features {
+    height: 180vh;
+    background: url('../../../public/WAVES/BG.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: -17%;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.column {
+    height: 60vh;
+    width: 80%;
+    border-radius: 10px;
+    margin-top: 1em;
+    background-color: #37906F;
+}
+
+.column:nth-child(2) {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    background-color: transparent;
+}
+
+.column:nth-child(2) .box {
+    border-radius: 10px;
+    width: 33.3%;
+    height: 100%;
+    background-color: antiquewhite;
+}
+
+.column:nth-child(2) .box:nth-child(1) {
+    background-color: #F85373;
+}
+
+.column:nth-child(2) .box:nth-child(2) {
+    background-color: #E48080;
+}
+
+.column:nth-child(2) .box:nth-child(3) {
+    background-color: #F1B6F9;
 }

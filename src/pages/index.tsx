@@ -1,7 +1,9 @@
 import Head from 'next/head'
+import styles from '@/styles/pages/Hero.module.css';
+
 import Navbar from '@/components/Navbar'
-import Hero from '@/components/Hero'
-import styles from '@/styles/components/Hero.module.css';
+import Hero from '@/components/Page Sections/Hero'
+import Features from '@/components/Page Sections/Features';
 
 export default function Home() {
   return (
@@ -15,6 +17,7 @@ export default function Home() {
       <main className={styles["main"]}>
         <Navbar></Navbar>
         <Hero></Hero>
+        <Features></Features>
       </main>
     </>
   )
