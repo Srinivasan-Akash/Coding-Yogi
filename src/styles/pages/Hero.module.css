@@ -31,7 +31,7 @@
     height: 40%;
     margin-top: 2em;
     padding-bottom: 2em;
-    z-index: 2;
+    z-index: 1;
 }
 
 .yellow {
@@ -93,7 +93,7 @@
 .features {
     height: 180vh;
     background: url('../../../public/WAVES/BG.png');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     margin-top: -17%;
     filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
