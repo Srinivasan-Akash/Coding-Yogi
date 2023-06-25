@@ -4,10 +4,12 @@
   --text-color: #C7CACA;
   --bg: linear-gradient(176deg,rgb(18,24,27) 50%,rgb(32,39,55) 100%);
   --green: #22C55E;
+  --purple: #594C9E;
   --yellow: #EF9D0C;
   --pink: #CA4186;
   --grey: #7f82829c;
   --border: #6C7983;
+  --blackPill: #342230;
 }
 
 * {

@@ -6,6 +6,7 @@ import Hero from '@/components/Page Sections/Hero'
 import Features from '@/components/Page Sections/Features';
 import Trending from '@/components/Page Sections/Trending';
 import FAQ from '@/components/Page Sections/FAQ';
+import Testimonials from '@/components/Page Sections/Testimonials';
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <Features></Features>
         <Trending></Trending>
         <FAQ></FAQ>
+        <Testimonials></Testimonials>
       </main>
     </>
   )
