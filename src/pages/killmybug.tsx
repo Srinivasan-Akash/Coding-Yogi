@@ -5,11 +5,12 @@ import { Container, Row, Col, Button } from 'react-bootstrap';
 import styles from '@/styles/pages/stackoverflow.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBug } from '@fortawesome/free-solid-svg-icons';
-
+import Navbar from '@/components/Navbar_2'
 const Killmybug = () => {
     return (
-        <Container fluid className={styles.killmybug} >
-            <Container>
+        <Container fluid className={styles.layout} >
+            <Navbar></Navbar>
+            <Container className={styles.killmybug} >
                 <Row className="align-items-center">
                     <Col md={6}>
                         <h1 >Welcome to KillMyBug</h1>
