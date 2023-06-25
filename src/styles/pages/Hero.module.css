@@ -103,6 +103,29 @@
     justify-content: center;
 }
 
+@media screen and (max-width: 700px) {
+    .features {
+        height: 170vh;
+        margin-top: -30%;
+    }
+
+    .column:nth-child(2) {
+        flex-direction: column;
+    }
+
+    .column:nth-child(2) .box {
+        width: 100% !important;
+    }
+
+    .column:nth-child(1) {
+        height: calc(75vh/3) !important;
+    }
+
+    .column:nth-child(2) {
+        height: 75vh !important;
+    }
+}
+
 .column {
     height: 60vh;
     width: 80%;
