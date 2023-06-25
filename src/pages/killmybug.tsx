@@ -8,19 +8,19 @@ import { faBug } from '@fortawesome/free-solid-svg-icons';
 
 const Killmybug = () => {
     return (
-        <Container fluid className={styles.killmybug} id = "killmybug">
+        <Container fluid className={styles.killmybug} >
             <Container>
                 <Row className="align-items-center">
                     <Col md={6}>
-                        <h1 className='yellow'>Welcome to KillMyBug</h1>
-                        <p className="yellow">
+                        <h1 >Welcome to KillMyBug</h1>
+                        <p >
                             A community-driven platform for developers to get help and solve bugs.
                         </p>
                         <Button variant="primary" size="lg">
                             Get Started
                         </Button>
                     </Col>
-                    <Col md={6} className="yellow">
+                    <Col md={6} >
                         <FontAwesomeIcon icon={faBug} />
 
                     </Col>
