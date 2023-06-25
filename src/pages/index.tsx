@@ -4,6 +4,7 @@ import styles from '@/styles/pages/Hero.module.css';
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Page Sections/Hero'
 import Features from '@/components/Page Sections/Features';
+import Trending from '@/components/Page Sections/Trending';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <Navbar></Navbar>
         <Hero></Hero>
         <Features></Features>
+        <Trending></Trending>
       </main>
     </>
   )

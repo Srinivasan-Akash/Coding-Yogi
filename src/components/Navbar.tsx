@@ -19,11 +19,11 @@ export default function Navbar() {
 
       <div ref={menu} className={styles["nav-items"]}>
         <ul>
-          <li><Link href="/">My Home</Link></li>
-          <li><Link href="/courses">Courses</Link></li>
-          <li><Link href="#">Resources</Link></li>
-          <li><Link href="#">Community</Link></li>
-          <li><Link href="#">Challenges</Link></li>
+          <li><Link className={styles.link} href="/">My Home</Link></li>
+          <li><Link className={styles.link} href="/courses">Courses</Link></li>
+          <li className={styles.link}>Resources</li>
+          <li className={styles.link}>Community</li>
+          <li className={styles.link}>Products</li>
           <li onClick={handleMenu} className={styles["close"]}></li>
         </ul>
       </div>

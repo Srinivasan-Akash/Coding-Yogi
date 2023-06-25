@@ -21,3 +21,12 @@ body {
   background: var(--bg);
   height: fit-content;
 }
+
+.yellow {
+  color: var(--yellow);
+  position: relative;
+}
+
+.pink {
+  color: var(--pink);
+}

@@ -14,16 +14,21 @@
     list-style-type: none;
 }
 
-.nav-items ul li a,
-.nav-items ul li a,
+.nav-items ul li,
 .logo h1 a {
-    text-decoration: none;
     font-size: 1.2em;
+    text-decoration: none;
     color: var(--text-color);
 }
 
-.nav-items a:hover {
+.nav-items ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.nav-items .link:hover {
     color: var(--grey);
+    cursor: pointer;
 }
 
 .signIn {
