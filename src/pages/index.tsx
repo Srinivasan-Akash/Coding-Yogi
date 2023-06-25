@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar'
 import Hero from '@/components/Page Sections/Hero'
 import Features from '@/components/Page Sections/Features';
 import Trending from '@/components/Page Sections/Trending';
+import FAQ from '@/components/Page Sections/FAQ';
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <Hero></Hero>
         <Features></Features>
         <Trending></Trending>
+        <FAQ></FAQ>
       </main>
     </>
   )
