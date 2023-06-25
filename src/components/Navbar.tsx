@@ -23,7 +23,7 @@ export default function Navbar() {
           <li><Link className={styles.link} href="/courses">Courses</Link></li>
           <li className={styles.link}>Resources</li>
           <li className={styles.link}>Community</li>
-          <li className={styles.link}>Products</li>
+          <li ><Link className={styles.link} href="/killmybug">Products</Link></li>
           <li onClick={handleMenu} className={styles["close"]}></li>
         </ul>
       </div>
